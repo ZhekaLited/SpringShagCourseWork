@@ -14,6 +14,7 @@ public  class CarController {
     @Autowired
     private CarService carService;
 
+    //@Valid для проверки Hibernate
     // Save operation
     @PostMapping("/cars")
     public Car saveCar(@Valid @RequestBody Car car)
